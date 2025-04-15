@@ -9,11 +9,7 @@ import logger
 
 
 
-# def write_logs(input):
-#     with open('logs.txt','a') as file:
-        
-        
-#         return file.write(input)
+
 
 def student_menu():
     
