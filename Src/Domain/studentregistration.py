@@ -1,4 +1,4 @@
-path=r"Src/Database/studentdata.json"
+path=r"student_registration_task_python/Src/Database/studentdata.json"
 import json
 import os
 def get_load(path):
@@ -87,22 +87,27 @@ def details_student():
     data_store.append(student_data) 
         
     with open(path,'w') as file:
+        
         json.dump(data_store,file, indent=4)
         
 
 def student_menu():
-    print('1. Press Register and save data in json file!')
+    while True:
         
-    print('2. Display Active and Inactive Student!')
-    print('0. Press Exit')
-    choice_number=int(input('please enter your press number: '))
-    if choice_number ==1:
-        details_student()
+        print('1. Press Register and save data in json file!')
             
-    elif choice_number==2:
+        print('2. Display Active and Inactive Student!')
+        print('0. Press Exit')
+        choice_number=int(input('please enter your press number: '))
+        if choice_number ==1:
             
-        report_data()
-    elif choice_number==0:
-        break          
+            details_student()
+                
+        elif choice_number==2:
+                
+            report_data()
+        elif choice_number==0:
+            
+            break          
 
 
