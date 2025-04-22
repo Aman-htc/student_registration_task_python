@@ -54,5 +54,12 @@
         "contact": 987647598,
         "address": "arna",
         "active": true
+    },
+    {
+        "id": 121,
+        "name": "aman",
+        "contact": 9876545454,
+        "address": "arna",
+        "active": false
     }
 ]

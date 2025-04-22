@@ -1,6 +1,9 @@
-from Domain import studentregistration
+
+from Domain import menu
+menu.student_menu()
 
 
 
-studentregistration.student_menu()
+
+
 

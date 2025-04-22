@@ -7,10 +7,12 @@ def load(path):
 
 
 def active_student(path):
-    data=load(path)
-    for s in data:
-        for key,value in s.items():
-            if value ==True:
-                print(json.dumps(s,indent=4))
-                
+    try:
+        data=load(path)
+        for s in data:
+            for key,value in s.items():
+                if value ==True:
+                    print(json.dumps(s,indent=4))
+    except Exception as e:
+        print('please wait technical issue!')            
     
