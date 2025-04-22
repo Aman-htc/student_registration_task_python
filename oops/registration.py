@@ -136,7 +136,3 @@ class student:
                 
                     
                     
-# student_data=student()                    
-# student_data.registration()
-# student_data.display_info()
-# student_data.search_info()
